@@ -1,0 +1,204 @@
+#----------------------------------------------------------------------------------------
+# GMH 09/10/2024 - Removed all names except for those hosted on Amazon.
+#----------------------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------
+#
+# AMAZON - HOSTED DATABASES
+#
+# ALL REFERENCES TO OUR AMAZON DATABASES WILL BE PREFIXED WITH "FIELDNET_" 
+# THIS IS FOLLOWED BY THE CLIENT DATABASE NAME. 
+# Examples: FIELDNET_AEP, FIELDNET_FE, FIELDNET_CE, etc.
+#
+#---------------------------------------------------------------------------------------- 
+#----------------------------------------------------------------------------------------
+
+# Initial TNS Name for FE AWS was FIELDNET1_UTIL1.
+# Maintianing That For Backward Compatibility. DEPRECATED. 
+# USE THE MORE INTUITIVE NAME LISTED BELOW. (FIELDNET_FE)
+
+FIELDNET1_UTIL1.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = fieldnet1.c8ijncczyizs.us-east-2.rds.amazonaws.com)(Port = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = UTIL1)
+    )
+  )
+
+# THE ENTRY ABOVE WAS THE ORIGINAL SETTING. IT IS RENAMED HERE TO ABIDE BY THE AMAZON
+# TNS NAMING CONVENTIONED MENTIONED ABOVE. (AMAZON - HOSTED DATABASES)
+
+FIELDNET_FE.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = fieldnet1.c8ijncczyizs.us-east-2.rds.amazonaws.com)(Port = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = UTIL1)
+    )
+  )
+
+FIELDNET_CE.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = fieldnet-ce.c8ijncczyizs.us-east-2.rds.amazonaws.com)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = orcl)
+    )
+  )
+
+FIELDNET_PACIFIC.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)
+                 (HOST = pacific.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (PORT = 1521))
+    )
+  (CONNECT_DATA =
+    (SID=pacific)
+  )
+)
+
+FIELDNET_SWGAS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)
+                 (HOST = swgas.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (PORT = 1521))
+    )
+  (CONNECT_DATA =
+    (SID=swgas)
+  )
+)
+
+FIELDNET_ESE.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)
+                 (HOST = ese.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (PORT = 1521))
+    )
+  (CONNECT_DATA =
+    (SID=ese)
+  )
+)
+
+FIELDNET_ESEUAT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)
+                 (HOST = eseuat.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (PORT = 1521))
+    )
+  (CONNECT_DATA =
+    (SID=eseuat)
+  )
+)
+
+FIELDNET_AEP.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)
+                 (HOST = aep.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (PORT = 1521))
+    )
+  (CONNECT_DATA =
+    (SID=aep)
+  )
+)
+
+utilpros-aep.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)
+                 (HOST = aep.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (PORT = 1521))
+    )
+  (CONNECT_DATA =
+    (SID=aep)
+  )
+)
+
+FIELDNET_TECO.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)
+                 (HOST = teco.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (PORT = 1521))
+    )
+  (CONNECT_DATA =
+    (SID=teco)
+  )
+)
+
+FIELDNET_GMPC.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)
+                 (HOST = gmpc.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (PORT = 1521))
+    )
+  (CONNECT_DATA =
+    (SID=gmpc)
+  )
+)
+
+FIELDNET_PSN.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)
+                 (HOST = psn.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (PORT = 1521))
+    )
+  (CONNECT_DATA =
+    (SID=psn)
+  )
+)
+
+FIELDNET_LGEKU.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)
+                 (HOST = lgeku.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (PORT = 1521))
+    )
+  (CONNECT_DATA =
+    (SID=lgeku)
+  )
+)
+
+FIELDNET_EXCEL.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)
+                 (HOST = excel.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (PORT = 1521))
+    )
+  (CONNECT_DATA =
+    (SID=excel)
+  )
+)
+
+utilpros_lgeku.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)
+                 (HOST = lgeku.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (PORT = 1521))
+    )
+  (CONNECT_DATA =
+    (SID=lgeku)
+  )
+)
+
+#----------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------
+#
+# AMAZON - END OF HOSTED DATABASES
+#
+#---------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------
