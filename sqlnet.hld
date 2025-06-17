@@ -1,0 +1,4 @@
+AUTOMATIC_IPC = OFF
+names.directory_path = (TNSNAMES)
+names.default_domain = world
+name.default_zone = world
