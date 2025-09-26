@@ -207,15 +207,15 @@ smartessentials.WORLD =
   )
 )
 
-FIELDNET_ESEPROD.WORLD =
+FIELDNET_ESEPRD.WORLD =
   (DESCRIPTION =
     (ADDRESS_LIST =
       (ADDRESS = (PROTOCOL = TCP)
-                 (HOST = eseprod.c8ijncczyizs.us-east-2.rds.amazonaws.com)
+                 (HOST = eseprd.c8ijncczyizs.us-east-2.rds.amazonaws.com)
                  (PORT = 1521))
     )
   (CONNECT_DATA =
-    (SID=eseprod)
+    (SID=eseprd)
   )
 )
 
